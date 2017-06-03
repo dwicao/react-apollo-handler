@@ -1,6 +1,6 @@
 {
   "name": "react-apollo-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Apollo Loading And Error Handler",
   "main": "src/main.js",
   "repository": {
