@@ -1,0 +1,29 @@
+{
+  "name": "react-apollo-handler",
+  "version": "1.0.0",
+  "description": "React Apollo Loading And Error Handler",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwicao/react-apollo-handler.git.git"
+  },
+  "keywords": [
+    "react",
+    "apollo",
+    "handler",
+    "error",
+    "loading",
+    "data",
+    "hoc"
+  ],
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "author": "Lutfian Dwi Cahyono <lutfiandwica@gmail.com> (https://dwicao.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwicao/react-apollo-handler.git/issues"
+  },
+  "homepage": "https://github.com/dwicao/react-apollo-handler.git#readme"
+}
