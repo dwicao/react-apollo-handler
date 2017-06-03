@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 const apolloHandler = (LoadingComponent, ErrorComponent) => (WrappedComponent) => {
-  return class extends Component {
+  class EnhancedComponent extends Component {
     render() {
       const { loading, error } = this.props.data;
 
@@ -12,6 +12,12 @@ const apolloHandler = (LoadingComponent, ErrorComponent) => (WrappedComponent) =
       return <WrappedComponent {...this.props} />;
     }
   }
+
+  EnhancedComponent.propTypes = {
+    data: PropTypes.object.isRequired,
+  };
+
+  return EnhancedComponent;
 }
 
 export default apolloHandler;
