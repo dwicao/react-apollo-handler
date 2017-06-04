@@ -1,6 +1,6 @@
 {
   "name": "react-apollo-handler",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React Apollo Loading And Error Handler",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,7 @@
     "hoc"
   ],
   "files": [
-    "src",
+    "index.js",
     "README.md"
   ],
   "author": "Lutfian Dwi Cahyono <lutfiandwica@gmail.com> (https://dwicao.github.io/)",
