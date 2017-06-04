@@ -1,8 +1,11 @@
 {
   "name": "react-apollo-handler",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React Apollo Loading And Error Handler",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --presets=es2015,react --minified"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dwicao/react-apollo-handler.git.git"
@@ -17,7 +20,7 @@
     "hoc"
   ],
   "files": [
-    "index.js",
+    "dist",
     "README.md"
   ],
   "author": "Lutfian Dwi Cahyono <lutfiandwica@gmail.com> (https://dwicao.github.io/)",
@@ -25,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/dwicao/react-apollo-handler.git/issues"
   },
-  "homepage": "https://github.com/dwicao/react-apollo-handler.git#readme"
+  "homepage": "https://github.com/dwicao/react-apollo-handler.git#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
 }
