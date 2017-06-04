@@ -1,5 +1,18 @@
 # react-apollo-handler  
-This package is being made for handing Loading/Error component while your Apollo Client fetch data from GraphQL Server.  
+
+In many cases, if you have React Component and Apollo Client tied together, you must do like this:  
+
+```jsx
+render () {
+  if (this.props.data.loading) {
+    return <div>Loading...</div>;
+  } else {
+    return <div>This is the actual content</div>;
+  }
+}
+```
+
+This package handle if data is loading/error for you, so you don't need do it by yourself.
 
 * You can use this package for React.js or React Native.
 
@@ -9,7 +22,6 @@ This package is being made for handing Loading/Error component while your Apollo
 ## Usage
 ```jsx
 const ComponentWithHandler = apolloHandler(LoadingComponent, ErrorComponent)(MyComponent);
-
 export default graphql(query)(ComponentWithHandler);
 ```
 
@@ -43,7 +55,7 @@ const query = gql`
 
 const HomePageWithHandler = apolloHandler(LoadingSpinner, ErrorComponent)(HomePage);
 
-// ErrorComponent is optional, so you can just do like this :
+// ErrorComponent is optional, so you can just do like this:
 // const HomePageWithHandler = apolloHandler(LoadingSpinner)(HomePage);
 
 export default graphql(query)(HomePageWithHandler);
