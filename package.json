@@ -1,8 +1,8 @@
 {
   "name": "react-apollo-handler",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "React Apollo Loading And Error Handler",
-  "main": "src/main.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dwicao/react-apollo-handler.git.git"
