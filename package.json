@@ -4,7 +4,8 @@
   "description": "React Apollo Loading And Error Handler",
   "main": "dist/main.js",
   "scripts": {
-    "build": "babel src --out-dir dist --presets=es2015,react --minified"
+    "build": "babel src --out-dir dist --presets=es2015,react --minified",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
